@@ -2,6 +2,11 @@
 -- NOTE:
 --  For more options, you can see `:help option-list`
 
+vim.o.tabstop = 8
+vim.o.softtabstop = 8
+vim.o.shiftwidth = 8
+vim.o.expandtab = true
+
 -- Make line numbers default
 vim.o.number = true
 -- vim.o.relativenumber = true
@@ -58,5 +63,14 @@ vim.o.scrolloff = 8
 -- -- instead raise a dialog asking if you wish to save the current file(s)
 -- -- See `:help 'confirm'`
 -- vim.o.confirm = true
+
+-- Set <space> as the leader key
+-- See `:help mapleader`
+--  NOTE: Must happen before plugins are loaded (otherwise wrong leader will be used)
+vim.g.mapleader = ' '
+vim.g.maplocalleader = ' '
+
+-- Set to true if you have a Nerd Font installed and selected in the terminal
+vim.g.have_nerd_font = true
 
 vim.opt.guicursor = 'n-v-i-c:block-Cursor'
