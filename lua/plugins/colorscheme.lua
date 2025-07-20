@@ -11,6 +11,7 @@ return { -- You can easily change to a different colorscheme.
       styles = {
         comments = { italic = false }, -- Disable italics in comments
       },
+      transparent = true,
     }
 
     -- Load the colorscheme here.
